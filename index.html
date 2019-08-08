@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <script src="./sanjeetAR.js"></script>
+  </head>
+  <body style="margin : 0px; overflow: hidden">
+
+    <a-scene embedded arjs="sourceType: webcam">
+        <a-marker type="pattern" preset="custom" url="capamerica.patt">
+            <a-entity 
+                obj-model="obj: url(IronMan.obj); 
+                mtl: url(IronMan.mtl)">
+            </a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
