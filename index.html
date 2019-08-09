@@ -8,13 +8,44 @@
   <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden">
-    <a-scene embedded arjs="sourceType: webcam">
-        <a-marker type="pattern" preset="custom" url="capamerica.patt">
-            <a-entity 
-                obj-model="obj: url(Moon.obj); mtl: url(Moon.mtl)">
-            </a-entity>
-        </a-marker>
-        <a-entity camera></a-entity>
+    <a-scene embedded arjs="sourceType: webcam" displayWidth="50" displayHeight="50px" canvasHeight="50" canvasHeight="50">
+      <a-marker type="pattern" preset="custom" url="./assets/patterns/pattern-FirePanel.patt">
+        <a-entity obj-model="obj: url(./assets/models/Moon.obj); mtl: url(./assets/models/Moon.mtl)">
+        </a-entity>
+      </a-marker>
+      <a-marker type="pattern" preset="custom" url="./assets/patterns/pattern-LAN.patt">
+        <a-entity obj-model="obj: url(./assets/models/Moon.obj); mtl: url(./assets/models/Moon.mtl)">
+        </a-entity>
+      </a-marker>
+      <a-marker type="pattern" preset="custom" url="./assets/patterns/pattern-ACvent.patt">
+        <a-entity obj-model="obj: url(./assets/models/Moon.obj); mtl: url(./assets/models/Moon.mtl)">
+        </a-entity>
+      </a-marker>
+      <a-marker type="pattern" preset="custom" url="./assets/patterns/pattern-Blinds.patt">
+        <a-entity obj-model="obj: url(./assets/models/Moon.obj); mtl: url(./assets/models/Moon.mtl)">
+        </a-entity>
+      </a-marker>
+      <a-marker type="pattern" preset="custom" url="./assets/patterns/pattern-ElectricalWires.patt">
+        <a-entity obj-model="obj: url(./assets/models/Moon.obj); mtl: url(./assets/models/Moon.mtl)">
+        </a-entity>
+      </a-marker>
+      <a-marker type="pattern" preset="custom" url="./assets/patterns/pattern-FirePanelController.patt">
+        <a-entity obj-model="obj: url(./assets/models/Moon.obj); mtl: url(./assets/models/Moon.mtl)">
+        </a-entity>
+      </a-marker>
+      <a-marker type="pattern" preset="custom" url="./assets/patterns/pattern-Light.patt">
+        <a-entity obj-model="obj: url(./assets/models/Moon.obj); mtl: url(./assets/models/Moon.mtl)">
+        </a-entity>
+      </a-marker>
+      <a-marker type="pattern" preset="custom" url="./assets/patterns/pattern-LightSensor.patt">
+        <a-entity obj-model="obj: url(./assets/models/Moon.obj); mtl: url(./assets/models/Moon.mtl)">
+        </a-entity>
+      </a-marker>
+      <a-marker type="pattern" preset="custom" url="./assets/patterns/pattern-Sprinkler.patt">
+        <a-entity obj-model="obj: url(./assets/models/sprinkler.obj)">
+        </a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
