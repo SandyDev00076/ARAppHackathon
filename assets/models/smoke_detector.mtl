@@ -1,8 +1,12 @@
-newmtl blinn1SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd smoke_detector.tif
-Ni 1.00
-Ks 0.50 0.50 0.50
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 11.09.2018 23:51:39
+
+newmtl wire_213154229
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.835294 0.603922 0.898039
+	Kd 0.835294 0.603922 0.898039
+	Ks 0.350000 0.350000 0.350000
