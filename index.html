@@ -9,6 +9,7 @@
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden">
     <a-scene embedded arjs="sourceType: webcam">
+      <!-- Will include models for each entities corresponding to the pattern file -->
       <a-marker type="pattern" preset="custom" url="./assets/patterns/pattern-FirePanel.patt">
         <a-entity obj-model="obj: url(./assets/models/Moon.obj); mtl: url(./assets/models/Moon.mtl)">
         </a-entity>
